@@ -87,8 +87,8 @@ $(function() {
                         message: '电话不能为空'
                     },
                     stringLength: {
-                        min: 2,
-                        max: 10,
+                        min: 8,
+                        max: 12,
                         message: '请输入正确的联系方式'
                     },
                     regexp: {
