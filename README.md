@@ -12,13 +12,40 @@
 ####工作流程   
 
 
-*1.cd desktop->mkdir demo-xdf->cd demo-xdf->npm init(创建page.json文件)<br>  
+*1.首先假设你已安装node.js<br>   
+cd desktop->   
+mkdir demo-xdf->   
+cd demo-xdf->   
+npm init(创建page.json文件)->   
+npm install express --save 
 
 
-*2.后台预约界面从数据库获取数据添加到后台页面<br>  
+*2.目录结构：<br>   
+
+├── app.js
+├── bin
+│   └── www
+├── package.json
+├── public
+│   ├── images
+│   ├── javascripts
+│   └── stylesheets
+│       └── style.css
+├── routes
+│   ├── index.js
+│   └── users.js
+└── views
+    ├── error.jade
+    ├── index.jade
+    └── layout.jade
+
+7 directories, 9 files  
 
 
-*3.考虑到服务器问题这里用json代替实现简单的数据交互<br>   
+*3.app.js文件配置路由public文件夹中添加项目文件<br>   
+
+*4.MySQL数据库的连接以后后台页面实现数据的增、删等功能<br>  
+
 
 * * *   
 
