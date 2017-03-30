@@ -25,16 +25,16 @@ npm install express --save
 .
 ├── app.js
 ├── bin
-│&nbsp;&nbsp; └── www
+│   └── www
 ├── package.json
 ├── public
-│&nbsp;&nbsp; ├── images
-│&nbsp;&nbsp; ├── javascripts
-│&nbsp;&nbsp; └── stylesheets
-│&nbsp;&nbsp;     └── style.css
+│   ├── images
+│   ├── javascripts
+│   └── stylesheets
+│        └── style.css
 ├── routes
-│&nbsp;&nbsp; ├── index.js
-│&nbsp;&nbsp; └── users.js
+│   ├── index.js
+│   └── users.js
 └── views
     ├── error.jade
     ├── index.jade
