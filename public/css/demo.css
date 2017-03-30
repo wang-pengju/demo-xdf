@@ -1,6 +1,11 @@
-.wraper {
+body,
+html {
   width: 100%;
   height: 100%;
+}
+.wraper {
+  width: 100%;
+  min-height: 100%;
   position: relative;
 }
 .wraper header {
@@ -14,6 +19,8 @@
   display: flex;
 }
 .wraper article {
+  width: 100%;
+  height: 18.64rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -26,6 +33,15 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+.wraper footer {
+  width: 100%;
+  height: 2.4rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background: #36485e;
 }
 header a {
   color: #fff;
@@ -52,7 +68,7 @@ header a:nth-of-type(2) {
 .top {
   width: 8rem;
   height: 7.36rem;
-  margin-top: 0.4rem;
+  position: relative;
 }
 .top .top-container {
   width: 100%;
@@ -131,15 +147,6 @@ header a:nth-of-type(2) {
 .content button {
   width: 25%;
   margin: 0 1rem;
-}
-footer {
-  width: 100%;
-  height: 2.4rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  background: #36485e;
 }
 footer a {
   display: block;

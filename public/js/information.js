@@ -40,14 +40,63 @@ $(document).ready(function() {
                     $("#userEmail").val('');
                     $("#userTel").val('');
                     $("#userTime").val('');
+                    window.location.href = "http://m.souke.xdf.cn/";
                 }
             })
         }
-    })
+
+    });
     $("#btnreset").click(function() {
         $("#userName").val('');
         $("#userEmail").val('');
         $("#userTel").val('');
         $("#userTime").val('');
+    });
+
+});
+$(function() {
+    $("#signupForm").bootstrapValidator({
+        message: 'This value is not valid',
+        fields: {
+            username: {
+                message: '用户名验证失败',
+                validators: {
+                    notEmpty: {
+                        message: '用户名不能为空'
+                    },
+                    stringLength: {
+                        min: 2,
+                        max: 10,
+                        message: '用户名长度必须在2到18位之间'
+                    }
+                }
+            },
+            useremail: {
+                validators: {
+                    notEmpty: {
+                        message: '邮箱不能为空'
+                    },
+                    emailAddress: {
+                        message: '邮箱地址格式有误'
+                    }
+                }
+            },
+            usertel: {
+                validators: {
+                    notEmpty: {
+                        message: '电话不能为空'
+                    },
+                    stringLength: {
+                        min: 2,
+                        max: 10,
+                        message: '请输入正确的联系方式'
+                    },
+                    regexp: {
+                        regexp: /^[0-9_]+$/,
+                        message: '联系方式只能数字和下划线'
+                    }
+                }
+            }
+        }
     });
 });

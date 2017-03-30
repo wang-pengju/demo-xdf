@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="font/iconfont.css">
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/demo.css">
     <script type="text/javascript" src="js/screenSize.js"></script>
 </head>
@@ -35,14 +36,14 @@
             </div>
             <div class="content">
                 <div class="row">
-                    <form class="form-inline">
+                    <form class="form-inline" id="signupForm">
                         <div class="form-group col-lg-12">
                             <label class="sr-only" for="userName"></label>
                             <div class="input-group">
-                            <div class="input-group-addon">
-                                <span class="glyphicon glyphicon-user"></span>
+                                <div class="input-group-addon">
+                                    <span class="glyphicon glyphicon-user"></span>
                                 </div>
-                                <input type="text" class="form-control" id="userName" placeholder=" 预约姓名">
+                                <input type="text" class="form-control" id="userName" name="username" placeholder=" 预约姓名">
                             </div>
                         </div>
                         <div class="form-group col-lg-12">
@@ -51,7 +52,7 @@
                                 <div class="input-group-addon">
                                     <span class="glyphicon glyphicon-envelope"></span>
                                 </div>
-                                <input type="email" class="form-control" id="userEmail" placeholder="预约邮箱">
+                                <input type="email" class="form-control" id="userEmail" name="useremail" placeholder="预约邮箱">
                             </div>
                         </div>
                         <div class="form-group col-lg-12">
@@ -60,14 +61,14 @@
                                 <div class="input-group-addon">
                                     <span class="glyphicon glyphicon-earphone"></span>
                                 </div>
-                                <input type="tel" class="form-control" id="userTel" placeholder="预约电话">
+                                <input type="tel" class="form-control" id="userTel" name="usertel" placeholder="预约电话">
                             </div>
                         </div>
                         <div class="form-group col-lg-12">
                             <label class="sr-only" for="userTime"></label>
                             <div class="input-group">
                                 <div class="input-group-addon">方便时间段</div>
-                                <input list="usertime" class="form-control" id="userTime">
+                                <input list="usertime" class="form-control" id="userTime" name="usertime">
                                 <datalist id="usertime">
                                     <option value="12:30~2:00"></option>
                                     <option value="18:00以后"></option>
@@ -91,6 +92,7 @@
         </footer>
     </div>
     <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
     <script type="text/javascript" src="js/information.js"></script>
 </body>
 </html>
