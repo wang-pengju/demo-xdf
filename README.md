@@ -21,25 +21,27 @@ npm install express --save
 
 
 *2.目录结构：<br>   
-
+```javascript
+.
 ├── app.js
 ├── bin
-│   └── www
+│&nbsp;&nbsp; └── www
 ├── package.json
 ├── public
-│   ├── images
-│   ├── javascripts
-│   └── stylesheets
-│       └── style.css
+│&nbsp;&nbsp; ├── images
+│&nbsp;&nbsp; ├── javascripts
+│&nbsp;&nbsp; └── stylesheets
+│&nbsp;&nbsp;     └── style.css
 ├── routes
-│   ├── index.js
-│   └── users.js
+│&nbsp;&nbsp; ├── index.js
+│&nbsp;&nbsp; └── users.js
 └── views
     ├── error.jade
     ├── index.jade
     └── layout.jade
 
-7 directories, 9 files  
+7 directories, 9 files
+```
 
 
 *3.app.js文件配置路由public文件夹中添加项目文件<br>   
