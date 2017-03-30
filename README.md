@@ -6,7 +6,9 @@
 *2.后台预约界面从数据库获取数据添加到后台页面<br>  
 
 
-*3.github不能搭建动态服务器,要想测试请把代码下载到本地，在本地搭建服务器，然后再测试<br>   
+*3.由于github只能搭建静态页面。要测试完整的功能，只能git clone 代码，然后 运行 npm start  启动服务，然后在浏览器地址输入localhost:3000即可访问预约界面<br>   
+
+*4.环境node.js+MySQL数据库  
 
 
 ####工作流程   
@@ -17,7 +19,9 @@ cd desktop->
 mkdir demo-xdf->   
 cd demo-xdf->   
 npm init(创建page.json文件)->   
-npm install express --save 
+npm install express --save->   
+npm start->   
+浏览器输入localhost:3000,后台界面localhost:3000/admin.html    
 
 
 *2.目录结构：<br>   
