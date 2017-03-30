@@ -49,12 +49,7 @@ $(document).ready(function() {
                     $tRow.append($tdid, $tdname, $tdemail, $tdtel, $tdtime, $tdctrl);
                     $newsTable.append($tRow);
                 })
-            },
-            error: function(error) {
-                alert(error);
             }
-
-
         });
     }
 })
